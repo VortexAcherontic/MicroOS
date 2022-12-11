@@ -36,6 +36,8 @@ What you probably want to do is the following:
 This will allow sane to scan for driverless network scaners using the escl backend.  
 Most devices should support this.
 
+Side note: Network printers who support driverless access via CUPs do work out of the box.
+
 ## nVidia drivers
 As of now nVidia drivers need to be installed manually using MicroOS build-in tools to modify the next read-only snapshot.  
 
