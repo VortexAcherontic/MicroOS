@@ -38,6 +38,8 @@ Most devices should support this.
 
 Side note: Network printers who support driverless access via CUPs do work out of the box.
 
+Related Bugzilla report: https://bugzilla.opensuse.org/show_bug.cgi?id=1206277
+
 ## nVidia drivers
 As of now nVidia drivers need to be installed manually using MicroOS build-in tools to modify the next read-only snapshot.  
 
