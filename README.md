@@ -22,7 +22,7 @@ This is due to the fact that MicroOS is missing simple-scan or skanlite and some
 What you probably want to do is the following:
 1) Open Terminal  
 2) `sudo tranactional-update -c shell`  
-3) `zypper in skanlite snae-backends` for KDE or `zypper in simple-scan sane-backends` for Gnome  
+3) `zypper in skanlite sane-backends` for KDE or `zypper in simple-scan sane-backends` for Gnome  
 4) `vim /etc/sane.d/dll.conf`  
 5) Uncommend the line: `#escl`  
     * Press: `Insert`  
