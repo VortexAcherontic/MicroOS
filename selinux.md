@@ -4,10 +4,11 @@
 On this page you'll finde several issues which come up by MicroOS using a rather default SELinux policity set.
 
 ## Proton/Wine and SELinux
-There is currently a wierd sittuation where some games randomly not work no matter if they are rated Platinum or SteamDeck verified on SteamDB or Steam.  
+There is currently a wierd situation where some games randomly not work no matter if they are rated Platinum or SteamDeck verified on SteamDB or Steam.  
 This is due to a default SELinux configuiration of MicroOS.  
-In order to fixy this try running: `sudo setsebool -P selinuxuser_execmod 1` in a terminal  
-If your games now run successfully you want this change to be permanent:
+In order to fix this try running: `sudo setsebool -P selinuxuser_execmod 1` in a terminal and see if your game now runs as expected.  
+
+If you want this change to be permanent do the following:
 
 1) Open terminal  
 2) `sudo tranactional-update -c shell`  
