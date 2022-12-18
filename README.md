@@ -1,19 +1,8 @@
 # MicroOS Desktop
 A small Github Page to list road blockers for openSUSE MicroOS to be the perfect beginner and power user distribution.
 
-## Proton/Wine and SELinux
-There is currently a wierd sittuation where some games randomly not work no matter if they are rated Platinum or SteamDeck verified on SteamDB or Steam.  
-This is due to a default SELinux configuiration of MicroOS.  
-In order to fixy this try running: `sudo setsebool -P selinuxuser_execmod 1` in a terminal  
-If your games now run successfully you want this change to be permanent:
-
-1) Open terminal  
-2) `sudo tranactional-update -c shell`  
-3) `sudo setsebool -P selinuxuser_execmod 1`  
-4) exit
-
-After the next reboot this setting should be permanent.
-Related bugzilla report: https://bugzilla.opensuse.org/show_bug.cgi?id=1206292
+## SELinux
+[Got to SELinux page](selinux.md)
 
 ## Network attached document scanners
 As of now network scanners like 2 in 1 printers might not work by default.  
