@@ -20,8 +20,8 @@ Related bugzilla report: https://bugzilla.opensuse.org/show_bug.cgi?id=1206292
 
 ## Stack smashing attacks
 By default SELinux prevents applications and libraries to execute code on a stack.  
-This might lead to unwanted side effects such as some games (Stellaris) not to work.  
-When ever you encounter an issue lokking similar to:  
+This might lead to unwanted side effects such as some games ([Stellaris for example](https://forum.paradoxplaza.com/forum/threads/stellaris-does-not-launch-on-selinux-enabled-systems.1562601/)) not to work.  
+When ever you encounter an issue looking similar to:  
 
 ```
 some_library.so: cannot enable executable stack as shared object requires: Permission denied
