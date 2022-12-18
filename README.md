@@ -56,8 +56,8 @@ As of now nVidia drivers need to be installed manually using MicroOS build-in to
 8) `exit`  
 9) `reboot`  
 
-## Gnome Wayland and nVidia
-If you also want to use Wayland with nVidia on MicroOS (and gnome in general) you'll need to tweak the following:
+## Wayland and nVidia
+If you also want to use Wayland with nVidia on MicroOS (and other Linux distributions not having this by default) you'll need to tweak the following:
 
 1) Open a terminal  
 2) `sudo transactional-update -c shell`  
@@ -72,10 +72,14 @@ options nvidia NVreg_PreserveVideoMemoryAllocations=1
 7) Type `:x`  
 8) Then run `dracut -f`  
 9) `exit`  
-10) `sudo systemctl enable nvidia-suspend.service`  
-11) `sudo systemctl enable nvidia-resume.service`  
-12) `sudo systemctl enable nvidia-hibernate.service`  
-13) `sudo reboot`  
+
+If you're using the Gnome spin of MicroOS you alos need to enable a few systemd services for GDM to offer a Wayland session.  
+For this do the following:  
+
+1) `sudo systemctl enable nvidia-suspend.service`  
+2) `sudo systemctl enable nvidia-resume.service`  
+3) `sudo systemctl enable nvidia-hibernate.service`  
+4) `sudo reboot`  
 
 The systemD services are required for GDM to propose the Gnome Wayland session to the user.
 
