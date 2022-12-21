@@ -10,11 +10,11 @@ re-worked on the maintainers side.
 ## Prevent auto reboot
 To prevent MicroOS for automatically reboot do the following:  
 
-1) `transactional-update -c shell`
-2) `cp /usr/etc/transactional-update.conf /etc`
-3) `vim /etc/transactional-update.conf` and `Ins`
-Check if the line `REBOOT_METHOD=notify` is set to notify
-4) `esc :x`
+1) `transactional-update -c shell`  
+2) `cp /usr/etc/transactional-update.conf /etc`  
+3) `vim /etc/transactional-update.conf` and `Ins`  
+Check if the line `REBOOT_METHOD=notify` is set to notify  
+4) `esc :x`  
 
 After the next reboot transactional-upate will use the transactional-update notifyer instead of rebooting on it own.  
 As the notifyer is not yet ready you will not get notified but your MicroOS does not reboot on it's own,  
