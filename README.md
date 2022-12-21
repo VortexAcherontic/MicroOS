@@ -2,7 +2,10 @@
 A small Github Page to list road blockers for openSUSE MicroOS to be the perfect beginner and power user distribution.
 
 ## SELinux
-[Got to SELinux page](selinux.md)
+[Go to SELinux page](selinux.md)
+
+## Automatic reboots on update
+[Go to Auto update and reboot page](autoupdate.md)
 
 ## Network attached document scanners
 As of now network scanners like 2 in 1 printers might not work by default.  
